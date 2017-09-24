@@ -1,7 +1,11 @@
 
 <h1>{{titulo}}</h1>
 
-<strong>Empleado estrella:</strong><p> {{empleado.nombre}}</p>
+<strong>Empleado estrella:</strong>
+
+<button (click)="cambiarTrabajador()"> Cambiar empleado</button>
+<div *ngIf="trabajador_externo"> {{empleado.nombre}}</div>
+
+<div *ngIf="!trabajador_externo" >{{trabajadores[0].nombre}}</div>
 
 
-{{trabajadores[0].nombre}}

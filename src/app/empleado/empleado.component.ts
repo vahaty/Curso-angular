@@ -11,6 +11,7 @@ export class empleadoComponent{
 
     public empleado: Empleado;
     public trabajadores: Array<Empleado>;
+    public trabajador_externo: boolean ;
 
     ngOnInit(){
         this.empleado = new Empleado('Sonia', 28);
@@ -20,5 +21,11 @@ export class empleadoComponent{
             new Empleado('Edu', 29),
             new Empleado('Sofia', 27)
         ];
+
+        this.trabajador_externo = false;
+    }
+
+    cambiarTrabajador(){
+        this.trabajador_externo = !this.trabajador_externo;
     }
 }
