@@ -1,8 +1,8 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-import {empleadoComponent} from './app/empleado/empleado.component';
-import {FrutaComponent}  from './app/fruta/fruta.component';
+import {empleadoComponent} from './empleado/empleado.component';
+import {FrutaComponent}  from './fruta/fruta.component';
 
 const appRouter: Routes = [
     {path: '', component: empleadoComponent},
