@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+
 
 @Component({
     selector: 'fruta',
@@ -9,14 +11,23 @@ export class FrutaComponent {
     public nombre_componente: String = 'Componente Fruta';
     public listado_frutas = 'pera, naranja, sandia';
     private hola = 'Soy privada';
+    public parametro = '';
 
-    constructor() {
-        console.log('Esto es un constructor ' + this.hola);
-        this.holaMundo();
-    }
+    constructor(
+        private _route: ActivatedRoute,
+        private _router: Router,
+        
+        // console.log('Esto es un constructor ' + this.hola);
+        // this.holaMundo();
+    ) { }
 
     ngOnInit() {
-        // alert("funcionalidades");∫
+
+            this._route.params.forEach((params: Params) =>{
+                this.parametro = params['page'];
+                console.log(this.parametro);
+            });
+        // alert("funcionalidades");
 
         // variales y alcance
         var uno = 8;

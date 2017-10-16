@@ -10,6 +10,7 @@ const appRouter: Routes = [
     { path: '', component: HomeComponent },
     { path: 'empleado', component: empleadoComponent },
     { path: 'fruta', component: FrutaComponent },
+    { path: 'fruta/:page', component: FrutaComponent },
     { path: 'home', component: HomeComponent },
     // error
     { path: '**', component: HomeComponent }
