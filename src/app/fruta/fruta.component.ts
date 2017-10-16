@@ -30,7 +30,7 @@ export class FrutaComponent {
 
         console.log('dentro del if' + uno + ' ' + dos);
     }
-∫
+
     holaMundo() {
         // alert('Hola Mundo !!!');
     }
