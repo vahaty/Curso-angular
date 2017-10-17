@@ -13,6 +13,7 @@ export class FrutaComponent {
     private hola = 'Soy privada';
     public parametro = '';
     public color: string ;
+    public colorSelec: string;
     constructor(
         private _route: ActivatedRoute,
         private _router: Router,
@@ -20,6 +21,7 @@ export class FrutaComponent {
         // this.holaMundo();
     ) {
         this.color = 'red';
+        this.colorSelec = '#ccc';
     }
 
     ngOnInit() {
