@@ -12,14 +12,15 @@ export class FrutaComponent {
     public listado_frutas = 'pera, naranja, sandia';
     private hola = 'Soy privada';
     public parametro = '';
-
+    public color: string ;
     constructor(
         private _route: ActivatedRoute,
         private _router: Router,
-        
         // console.log('Esto es un constructor ' + this.hola);
         // this.holaMundo();
-    ) { }
+    ) {
+        this.color = 'red';
+    }
 
     ngOnInit() {
 
