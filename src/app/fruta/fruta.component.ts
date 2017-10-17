@@ -48,4 +48,8 @@ export class FrutaComponent {
     holaMundo() {
         // alert('Hola Mundo !!!');
     }
+
+    redirigir(){
+        this._router.navigate(['/fruta', 'ola']);
+    }
 }

@@ -2,10 +2,14 @@
    <p>{{listado_frutas}}</p>
    {{hola}}
 
-
+<div *ngIf="parametro" >
    {{parametro}}
+</div>
 
-
+<div *ngIf="!parametro" >
+    <button (click) ="redirigir()">Ir a la pagina con parametro</button>
+ </div>
+ 
    <hr/>
 
    <h3>Colores switch</h3>
