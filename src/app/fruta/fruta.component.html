@@ -1,26 +1,31 @@
 <h2>{{nombre_componente}}</h2>
-   <p>{{listado_frutas}}</p>
-   {{hola}}
+<p>{{listado_frutas}}</p>
+{{hola}}
 
-<div *ngIf="parametro" >
-   {{parametro}}
+<div *ngIf="parametro">
+    {{parametro}}
 </div>
 
-<div *ngIf="!parametro" >
-    <button (click) ="redirigir()">Ir a la pagina con parametro</button>
- </div>
+<div *ngIf="!parametro">
+    <button (click)="redirigir()">Ir a la pagina con parametro</button>
+</div>
+
+<hr/>
+
+<h3>Colores switch</h3>
+<ul [ngSwitch]="color">
+    <li *ngSwitchCase="'red'" [ngStyle]="{'background': color, 'color': 'white'}">Es de color rojo</li>
+</ul>
+
+
+
+<hr/>
+<pre [style.border]="colorSelec == 'red' ? '5px solid  black' : '1px solid green'" 
+[ngClass]="{bordeAzul :colorSelec == 'blue', fondoVerde : colorSelec == 'green'}"> 
+<!-- [class.bordeAzul] = "colorSelec === 'blue'" -->
  
-   <hr/>
-
-   <h3>Colores switch</h3>
-   <ul [ngSwitch]="color">
-       <li *ngSwitchCase="'red'" [ngStyle]="{'background': color, 'color': 'white'}">Es de color rojo</li>
-   </ul>
-
-     
-
-   <hr/>
    <h3>Selector de colores</h3>
    <strong>Color elegido</strong><input type="text" [(ngModel)]= "colorSelec"/>
-   <div [ngStyle]="{'background': colorSelec, 'width': '200px','height': '200px'}"> </div>
-   <div style="clear:both"></div>
+</pre>
+<div [ngStyle]="{'background': colorSelec, 'width': '200px','height': '200px'}"> </div>
+<div style="clear:both"></div>
