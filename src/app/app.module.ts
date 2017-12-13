@@ -7,11 +7,10 @@ import { AppComponent } from './app.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { empleadoComponent } from './empleado/empleado.component';
 import { HomeComponent } from './home/home.component';
-import {ConversorPipe} from './pipes/conversor.pipe';
 
 @NgModule({
   imports: [BrowserModule, routing, FormsModule],
-  declarations: [AppComponent, FrutaComponent, empleadoComponent, HomeComponent, ConversorPipe],
+  declarations: [AppComponent, FrutaComponent, empleadoComponent, HomeComponent],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]
 })

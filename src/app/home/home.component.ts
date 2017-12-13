@@ -9,13 +9,13 @@ import { Ropaservice } from '../service/ropa.service';
 
 export class HomeComponent {
     public titulo = 'home';
-    public fecha;
+    // public fecha;
 
     constructor(
         private _ropaService: Ropaservice,
 
     ) {
-        this.fecha = new Date('2017-04-02');
+        // this.fecha = new Date('2017-04-02');
      }
 
     ngOnInit(){
