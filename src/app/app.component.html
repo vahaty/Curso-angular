@@ -3,10 +3,15 @@
 <fruta></fruta>
 <empleado></empleado> -->
 
+
+<hr>
+
 <nav>
     <a [routerLink]="['/home']" [routerLinkActive] = "['activado']">home</a>
     <a [routerLink]="['/fruta']" [routerLinkActive] = "['activado']">fruta</a>
-
     <a [routerLink]="['/coches']" [routerLinkActive] = "['activado']">Coches</a>
+    <a [routerLink]="['/plantillas']" [routerLinkActive] = "['activado']">plantillas</a>
 </nav>
+
+<hr>
 <router-outlet></router-outlet>
