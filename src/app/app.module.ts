@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { empleadoComponent } from './empleado/empleado.component';
 import { HomeComponent } from './home/home.component';
+import {CochesComponent} from './coches/coches.component';
 
 @NgModule({
   imports: [BrowserModule, routing, FormsModule],
-  declarations: [AppComponent, FrutaComponent, empleadoComponent, HomeComponent],
+  declarations: [AppComponent, FrutaComponent, empleadoComponent, HomeComponent, CochesComponent],
   bootstrap: [AppComponent],
   providers: [appRoutingProviders]
 })

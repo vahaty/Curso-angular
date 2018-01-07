@@ -1,0 +1,14 @@
+<h1>Componente de coches</h1>
+
+<form #fromCoche="ngForm" (ngSubmit)="onSubmit()">
+    <p>
+        <label>marca</label>
+        <input type="text" name="marca" #marca="ngModel" [(ngModel)]="coche.marca" required>
+        <span *ngIf="marca.touched && !marca.valid"> La marca del coche es incorrecto</span>
+    </p>
+    <p>
+        <label>color</label>
+        <input type="text" name="color" #color="ngModel" [(ngModel)]="coche.color" required>
+    </p>
+    <input type="submit" value="guardar">
+</form>

@@ -4,6 +4,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { empleadoComponent } from './empleado/empleado.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { HomeComponent } from './home/home.component';
+import {CochesComponent} from './coches/coches.component';
 
 const appRouter: Routes = [
     // path vacio
@@ -12,6 +13,7 @@ const appRouter: Routes = [
     { path: 'fruta', component: FrutaComponent },
     { path: 'fruta/:page', component: FrutaComponent },
     { path: 'home', component: HomeComponent },
+    { path: 'coches', component: CochesComponent },
     // error
     { path: '**', component: HomeComponent }
 ];
